@@ -1,0 +1,12 @@
+#content {
+  text-align: center;
+}
+#content .paragraphs {
+  max-width: 600px;
+  display: inline-block;
+  line-height: 2em;
+}
+#content .paragraphs p {
+  text-align: justify;
+  font-size: 16px;
+}

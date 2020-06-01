@@ -1,0 +1,28 @@
+#side-nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  text-align: left;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#side-nav .nav-item {
+  flex-grow: 1;
+  background-color: #111111;
+  color: white;
+  font-size: 18px;
+  padding-left: 4vh;
+  margin-right: 2vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: margin-right 0.3s ease;
+}
+#side-nav .nav-item:hover {
+  background-color: #090909;
+  margin-right: 0;
+}

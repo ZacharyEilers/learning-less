@@ -1,0 +1,40 @@
+@desktopNavWidth: 20vw;
+
+@navItemColor: #111;
+
+@itemPadding: 4vh;
+@itemMargin: 2vh;
+
+#side-nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: @desktopNavWidth;
+  text-align: left;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .nav-item {
+    flex-grow: 1;
+
+    background-color: @navItemColor;
+    color: white;
+    font-size: 18px;
+    padding-left: @itemPadding;
+    margin-right: @itemMargin;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    transition: margin-right 0.3s ease;
+  }
+  .nav-item:hover {
+    background-color: @navItemColor*0.5;
+    margin-right: 0;
+  }
+}
